@@ -41,7 +41,7 @@ export NAME="Всем студентам"
 
 # запускаем task/dir2/hello.sh с переменной окружения NAME в качестве аргумента
 # вывод скрипта должен дописаться в файл task/dir1/summary.txt
-./task/dir2/hello.sh >> task/dir1/summary.txt
+./task/dir2/hello.sh "$NAME" >> task/dir1/summary.txt
 
 # перемещаем с переименованием task/dir1/summary.txt в task/Практическое задание
 mv task/dir1/summary.txt task/"Практическое задание"
